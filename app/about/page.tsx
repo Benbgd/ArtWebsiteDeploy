@@ -1,5 +1,3 @@
-// ./app/about/page.tsx
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -105,7 +103,7 @@ export default function AboutPage() {
         {/* Main Content */}
         <main id="about" className="pt-20">
           {/* Parallax section for About */}
-          <Parallax translateY={[-20, 20]} tagOuter="div">
+          <Parallax translateY={[-20, 20]}>
             <div className="container mx-auto px-6 py-12">
               <motion.h1
                 className="text-5xl font-bold mb-8 text-center"
@@ -137,7 +135,7 @@ export default function AboutPage() {
           </Parallax>
 
           {/* Parallax section for Values */}
-          <Parallax translateY={[-30, 30]} tagOuter="div">
+          <Parallax translateY={[-30, 30]}>
             <div className="bg-purple-800 py-12">
               <div className="container mx-auto px-6">
                 <h2 className="text-3xl font-bold mb-8 text-center">Our Values</h2>
@@ -161,7 +159,7 @@ export default function AboutPage() {
           </Parallax>
 
           {/* Parallax section for Team */}
-          <Parallax translateY={[-40, 40]} tagOuter="div">
+          <Parallax translateY={[-40, 40]}>
             <div className="container mx-auto px-6 py-12">
               <h2 className="text-3xl font-bold mb-8 text-center">Our Team</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
